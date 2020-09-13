@@ -267,7 +267,7 @@ module.exports = {
       this[req.method](req, res);
     }
     addMethod(method, func) {
-      this[method] = func;
+      this[method.toUpperCase()] = func;
     }
   },
 };
